@@ -2,4 +2,7 @@
     <string name="app_name">Vetpetapp</string>
     <string name="nomeApp">VETPET</string>
     <string name="subTitulo">Sistema de Consultas para Veterinarios</string>
+    <string name="txtCriarConsulta">Nova Consulta</string>
+    <string name="txtListar">Listar Consultas</string>
+    <string name="txtmodificar_consulta">Modificar consulta</string>
 </resources>
