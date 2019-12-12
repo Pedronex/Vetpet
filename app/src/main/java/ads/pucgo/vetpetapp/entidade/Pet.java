@@ -6,7 +6,8 @@ import java.util.List;
 public class Pet {
     private String nomeDono;
     private String nomePet;
-    private Double peso;
+    private double peso;
+    private int idade;
     private Date dataConsulta;
     private List<String> vacinas;
     private String telefone;
@@ -28,12 +29,20 @@ public class Pet {
         this.nomePet = nomePet;
     }
 
-    public Double getPeso() {
+    public double getPeso() {
         return peso;
     }
 
-    public void setPeso(Double peso) {
+    public void setPeso(double peso) {
         this.peso = peso;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 
     public Date getDataConsulta() {

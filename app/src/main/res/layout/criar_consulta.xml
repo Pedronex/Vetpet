@@ -2,33 +2,174 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/dash_color"
+    android:orientation="vertical"
     tools:context=".activitys.CriarConsulta">
+
     <View
         android:id="@+id/view"
         android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/header"
+        app:layout_constraintBottom_toTopOf="@+id/editdono"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
         android:text="@string/txtCriarConsulta"
         android:textColor="#f8f8f2"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editdono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="@string/dono"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editPet"
+        app:layout_constraintEnd_toStartOf="@+id/editPet"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editPet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/pet"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editdono"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="@string/idade"
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editpeso"
+        app:layout_constraintEnd_toStartOf="@+id/editpeso"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editpeso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/peso"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editidade"
+        app:layout_constraintTop_toBottomOf="@+id/editPet" />
+
+    <EditText
+        android:id="@+id/editVacina"
+        android:layout_width="0dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="80dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/vacinas"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/editObservacoes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editdono" />
+
+    <EditText
+        android:id="@+id/editTelefone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="@string/telefone"
+        android:inputType="phone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editData"
+        app:layout_constraintEnd_toStartOf="@+id/editData"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="310dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="@string/consulta"
+        android:inputType="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTelefone" />
+
+    <EditText
+        android:id="@+id/editObservacoes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="36dp"
+        android:autofillHints="true"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/observacao"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/btnGravar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTelefone"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/btnGravar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/button_color"
+        android:text="@string/btnTxtGravar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTelefone"
+        app:layout_constraintStart_toStartOf="@+id/editObservacoes" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/button_color"
+        android:text="@string/btnTxtCancelar"
+        app:layout_constraintEnd_toEndOf="@+id/editObservacoes"
+        app:layout_constraintStart_toEndOf="@+id/editTelefone"
+        app:layout_constraintTop_toBottomOf="@+id/editObservacoes" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

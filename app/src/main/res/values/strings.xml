@@ -5,4 +5,14 @@
     <string name="txtCriarConsulta">Nova Consulta</string>
     <string name="txtListar">Listar Consultas</string>
     <string name="txtmodificar_consulta">Modificar consulta</string>
+    <string name="btnTxtGravar">Gravar</string>
+    <string name="btnTxtCancelar">Cancelar</string>
+    <string name="observacao">Observações/Informações adicionais</string>
+    <string name="vacinas">Vacinas tomadadas (Separar por virgula)</string>
+    <string name="pet">Nome do Pet</string>
+    <string name="dono">Nome do Dono</string>
+    <string name="peso">Peso</string>
+    <string name="consulta">Data da Consulta</string>
+    <string name="telefone">Telefone</string>
+    <string name="idade">Idade</string>
 </resources>

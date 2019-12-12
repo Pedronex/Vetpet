@@ -11,11 +11,12 @@
     <View
         android:id="@+id/view"
         android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
         android:background="@drawable/header"
+        app:layout_constraintBottom_toTopOf="@+id/lista"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -32,4 +33,15 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="409dp"
+        android:layout_height="635dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/list_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 </androidx.constraintlayout.widget.ConstraintLayout>
