@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Vetpetapp</string>
+    <string name="nomeApp">VETPET</string>
+    <string name="subTitulo">Sistema de Consultas para Veterinarios</string>
 </resources>

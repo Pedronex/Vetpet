@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.home_page);
         Pet pet = new Pet();
         Gson conversor = new GsonBuilder().setDateFormat("dd/MM/yyyy").create();
         conversor.toJson(pet);
